@@ -17,6 +17,7 @@ body{
 
 
 header{
+	position: sticky;
 	background-color: #e8f6f3;
 	padding: 1px;
 	text-align: center;
