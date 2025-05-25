@@ -1,0 +1,128 @@
+/*
+Generale CSS
+*/
+
+
+
+
+
+ * {
+
+ 	box-sizing: border-box;
+ //da mettere sempre per i siti responsive
+ }
+body{
+	background-color: #fbfcfc;
+}
+
+
+header{
+	background-color: #e8f6f3;
+	padding: 1px;
+	text-align: center;
+	text-size-adjust: 100%;
+}
+nav{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+nav a{
+	overflow: auto;
+	background-color: #e8f6f3;
+	padding: 8px;
+	margin-top: 7px;
+	display: block;
+	width: 100%;
+	color: black;
+}
+
+h1{
+	color: #196f3d  ;
+}
+
+h2{
+	text-align:  center;
+	color: #73c6b6;
+
+}
+h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;   
+    font-weight: bold;    
+
+}
+
+.marquee-wrapper {
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-container {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-alternate 10s linear infinite alternate;
+        }
+
+        .marquee-container img {
+            vertical-align: middle;
+            width: 50px; /* Puoi regolare la dimensione */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .marquee-container h1 {
+            display: inline-block;
+            font-size: 24px;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+
+
+article{
+	float: left;
+	padding: 0px 20px;
+	//background-color: #e8f6f3;
+	margin-top: 6px;
+	width: 60%;
+	
+}
+p{
+	text-align: justify;
+    font-family: sans-serif;}
+
+aside{
+	background-color: #e8f6f3;
+	margin-top: 5px;
+	float: left;
+	padding: 15px;
+	width: 20%;
+	text-align: center;
+}
+section::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+footer{
+	background-color: #e8f6f3;
+	text-align: center;
+	padding: 1px;
+	margin-top: 2px;
+}
+
+@media only screen and (max-width:600px){
+	nav, article, aside{ width: 100%;  }
+}
+@keyframes scroll-alternate {
+            0% {
+                transform: translateX(-20%);
+            }
+            100% {
+                transform: translateX(20%); 
+            }
+        }
