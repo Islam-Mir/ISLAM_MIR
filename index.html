@@ -73,6 +73,36 @@ In <b>Malesia,</b> tra le giungle umide e le luci di Kuala Lumpur, si incrociano
 	</section>
 
 <footer>
+	<p>Musica di sottofondo in loop. Puoi metterla in pausa se vuoi.</p>
+	<audio id="bg-audio" autoplay loop>
+    <source src="./image/Pufino - Naturally (freetouse.com).mp3" type="audio/mpeg">
+    Il tuo browser non supporta l'audio HTML5.
+  </audio>
+  <button id="toggle-audio">⏸️ Metti in pausa</button>
+
+  <script>
+    const audio = document.getElementById('bg-audio');
+    const button = document.getElementById('toggle-audio');
+
+    button.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = '⏸️ Metti in pausa';
+      } else {
+        audio.pause();
+        button.textContent = '▶️ Riprendi musica';
+      }
+    });
+
+    // Eventuale fallback per browser che bloccano autoplay
+    window.addEventListener('load', () => {
+      audio.play().catch(() => {
+        // Cambia bottone se l'audio non parte da solo
+        button.textContent = '▶️ Avvia musica';
+      });
+    });
+  </script>
+
 	<h5>&copy; 2025 ISLAM MIR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PER SCRIVERMI: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:islam.mir@aldini.istruzioneer.it">islam.mir@aldini.istruzioneer.it </a></h5> 
 </footer>
 
