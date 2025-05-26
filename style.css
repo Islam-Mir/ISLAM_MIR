@@ -27,6 +27,7 @@ Generale CSS
 
 body{
 	background-color: #fbfcfc;
+	overflow: hidden;
 }
 
 .popup-toggle {
@@ -125,17 +126,19 @@ body{
 
 .slide-track {
   display: flex;
+  width: max-content; 
   /* larghezza non specificata: si adatta al contenuto */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-name: scroll-horizontal;
-  animation-duration: 5s;
+  animation-duration: 50s;
 }
 
 .slide-track img {
   height: 120px; /* immagine tutta visibile in altezza */
   width: auto;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: contain;
   flex-shrink: 0;
   margin-right: 10px; /* spazio tra immagini */
 }
