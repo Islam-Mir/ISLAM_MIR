@@ -27,7 +27,7 @@ Generale CSS
 
 body{
 	background-color: #fbfcfc;
-	overflow: hidden;
+	/*overflow: hidden; */
 }
 
 .popup-toggle {
