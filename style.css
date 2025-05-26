@@ -145,12 +145,12 @@ body{
 
 /* Slide sinistro: scorri da destra a sinistra */
 .slider.left .slide-track {
-  animation-name: scroll-left;
+  animation: scroll-left 20s linear infinite;
 }
 
 /* Slide destro: scorri da sinistra a destra */
 .slider.right .slide-track {
-  animation-name: scroll-right;
+  animation: scroll-right 20s linear infinite;
 }
 
 
