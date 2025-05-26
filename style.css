@@ -131,7 +131,8 @@ body{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-name: scroll-horizontal;
-  animation-duration: 50s;
+  animation-direction: alternate;
+  animation-duration: 60s;
 }
 
 .slide-track img {
@@ -145,12 +146,12 @@ body{
 
 /* Slide sinistro: scorri da destra a sinistra */
 .slider.left .slide-track {
-  animation: scroll-left 50s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 
 /* Slide destro: scorri da sinistra a destra */
 .slider.right .slide-track {
-  animation: scroll-right 50s linear infinite;
+  animation: scroll-right 60s linear infinite;
 }
 
 
