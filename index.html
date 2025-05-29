@@ -1,92 +1,34 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<title> Blog di M I </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog di Islam Mir</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
-	<meta  name="viewport" content="width-device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
-	<input type="checkbox" id="popup-toggle" class="popup-toggle">
+
+  <input type="checkbox" id="popup-toggle" class="popup-toggle">
 <div class="popup">
   <label for="popup-toggle" class="popup-close">✖</label>
   <h2>🚧 Sito in lavorazione</h2>
   <p>Questo sito è attualmente in fase di sviluppo. Alcune funzionalità potrebbero non essere disponibili.</p>
 </div>
-<header>
-        <div class="marquee-container">
-            <img src="./media\20230902_112816.jpg" alt="Foto">
-            <h1>Viaggiare è imparare senza libri, crescere senza confini e respirare il pianeta!</h1>
-            <img src="./media/IMG-20230912-WA0140.jpg" alt="viaggio">
-        </div>
-    </header>
 
-	<section>
-
-		<nav>
-		<h1>Paesi che ho respirato</h1>	
-		<a href="#">Bangladesh</a>
-		<a href="#">Italia</a>		
-		<a href="#">Francia</a>
-		<a href="#">Crozia</a>
-		<a href="#">Svizzera</a>
-		<a href="#">Portogallo</a>
-		<a href="#">Germania</a>
-		<a href="#">Polonia</a>
-		<a href="#">Malta</a>
-		<a href="#">Inghilterra</a>	
-		<a href="#">Spagna</a>
-		</nav>
-
-		<article>				
-		<h2>Benvenuti nei miei cammini tra persone, strade e momenti</h2>
-		
-<div class="media-wrapper">
-  <div class="slider left">
-    <div class="slide-track">
-      <img src="./media/C1.jpg" alt="img4">
-      <img src="./media/C2.jpg" alt="img5">
-      <img src="./media/C3.jpg" alt="img6">
-      <img src="./media/C4.jpg" alt="img4">
-      <img src="./media/C5.jpg" alt="img5">
-      <img src="./media/C6.jpg" alt="img6">
-      <img src="./media/C7.jpg" alt="img4">
-      <img src="./media/C8.jpg" alt="img5">
-      <img src="./media/C9.jpg" alt="img6">
-      <img src="./media/C10.jpg" alt="img4">
-      <img src="./media/C11.jpg" alt="img5">
-      <img src="./media/C12.jpg" alt="img6">
-      <img src="./media/C13.jpg" alt="img4">
-      <img src="./media/C14.jpg" alt="img5">
-      <img src="./media/C15.jpg" alt="img6">
-      <!-- Doppia copia per looping -->
-      <img src="./media/C1.jpg" alt="img4">
-      <img src="./media/C2.jpg" alt="img5">
-      <img src="./media/C3.jpg" alt="img6">
-      <img src="./media/C4.jpg" alt="img4">
-      <img src="./media/C5.jpg" alt="img5">
-      <img src="./media/C6.jpg" alt="img6">
-      <img src="./media/C7.jpg" alt="img4">
-      <img src="./media/C8.jpg" alt="img5">
-      <img src="./media/C9.jpg" alt="img6">
-      <img src="./media/C10.jpg" alt="img4">
-      <img src="./media/C11.jpg" alt="img5">
-      <img src="./media/C12.jpg" alt="img6">
-      <img src="./media/C13.jpg" alt="img4">
-      <img src="./media/C14.jpg" alt="img5">
-      <img src="./media/C15.jpg" alt="img6">
+  <header>
+    <div class="marquee-container">
+      <img src="./media/20230902_112816.jpg" alt="Foto" />
+      <h1>Viaggiare è imparare senza libri, crescere senza confini e respirare il pianeta!</h1>
+      <img src="./media/IMG-20230912-WA0140.jpg" alt="viaggio" />
     </div>
-  </div>
-
- <div class="audio-control-wrapper">
-  <p class="audio-text">Ho aggiunto una musica di sottofondo per rendere la lettura più piacevole. Puoi metterla in pausa se vuoi.<br><button id="toggle-audio">⏸️ Metti in pausa</button></p>
-  
-</div>
-
-<audio id="bg-audio" autoplay loop>
+  </header>
+  <div class="search-bar">
+        <div class="audio-control">
+          <button id="toggle-audio"></button>
+        </div>
+        <audio id="bg-audio" autoplay loop>
   <source src="./media/Pufino - Naturally (freetouse.com).mp3" type="audio/mpeg">
   Il tuo browser non supporta l'audio HTML5.
 </audio>
@@ -109,95 +51,140 @@
     window.addEventListener('load', () => {
       audio.play().catch(() => {
         // Cambia bottone se l'audio non parte da solo
-        button.textContent = '▶️ Avvia musica';
+        button.textContent = 'Musica in sottofondo. per avviare la musica clicca cui: ▶️ ';
       });
     });
   </script>
+       &nbsp;&nbsp;&nbsp; <h1>Benvenuti nei miei cammini tra persone, strade e momenti</h1>&nbsp;&nbsp;&nbsp;
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+          <input type="text" name="q" placeholder="Ricerca su Google..." required />
+          <button type="submit">Cerca</button>
+        </form>
+      </div>
 
-  <div class="slider right">
-    <div class="slide-track">
-      <img src="./media/M1.jpg" alt="img4">
-      <img src="./media/M2.jpg" alt="img5">
-      <img src="./media/M3.jpg" alt="img6">
-      <img src="./media/M4.jpg" alt="img4">
-      <img src="./media/M5.jpg" alt="img5">
-      <img src="./media/M6.jpg" alt="img6">
-      <img src="./media/M7.jpg" alt="img4">
-      <img src="./media/M8.jpg" alt="img5">
-      <img src="./media/M9.jpg" alt="img6">
-      <img src="./media/M10.jpg" alt="img4">
-      <img src="./media/M11.jpg" alt="img5">
-      <img src="./media/M12.jpg" alt="img6">
-      <img src="./media/M13.jpg" alt="img4">
-      <img src="./media/M14.jpg" alt="img5">
-      <img src="./media/M15.jpg" alt="img6">
-      <!-- Doppia copia per looping -->
-      <img src="./media/M1.jpg" alt="img4">
-      <img src="./media/M2.jpg" alt="img5">
-      <img src="./media/M3.jpg" alt="img6">
-      <img src="./media/M4.jpg" alt="img4">
-      <img src="./media/M5.jpg" alt="img5">
-      <img src="./media/M6.jpg" alt="img6">
-      <img src="./media/M7.jpg" alt="img4">
-      <img src="./media/M8.jpg" alt="img5">
-      <img src="./media/M9.jpg" alt="img6">
-      <img src="./media/M10.jpg" alt="img4">
-      <img src="./media/M11.jpg" alt="img5">
-      <img src="./media/M12.jpg" alt="img6">
-      <img src="./media/M13.jpg" alt="img4">
-      <img src="./media/M14.jpg" alt="img5">
-      <img src="./media/M15.jpg" alt="img6">
+  <div class="carousel-full">
+    <div class="carousel-track">
+      <img src="./media/M1.jpg" alt="img" />
+      <img src="./media/M2.jpg" alt="img" />
+      <img src="./media/M3.jpg" alt="img" />
+      <img src="./media/M4.jpg" alt="img" />
+      <img src="./media/M5.jpg" alt="img" />
+      <img src="./media/M6.jpg" alt="img" />
+      <img src="./media/M7.jpg" alt="img" />
+      <img src="./media/M8.jpg" alt="img" />
+      <img src="./media/M9.jpg" alt="img" />
+      <img src="./media/M10.jpg" alt="img" />
+      <img src="./media/M11.jpg" alt="img" />
+      <img src="./media/M12.jpg" alt="img" />
+      <img src="./media/M13.jpg" alt="img" />
+      <img src="./media/M14.jpg" alt="img" />
+      <img src="./media/M15.jpg" alt="img" />
+      <img src="./media/C1.jpg" alt="img" />
+      <img src="./media/C2.jpg" alt="img" />
+      <img src="./media/C3.jpg" alt="img" />
+      <img src="./media/C4.jpg" alt="img" />
+      <img src="./media/C5.jpg" alt="img" />
+      <img src="./media/C6.jpg" alt="img" />
+      <img src="./media/C7.jpg" alt="img" />
+      <img src="./media/C8.jpg" alt="img" />
+      <img src="./media/C9.jpg" alt="img" />
+      <img src="./media/C10.jpg" alt="img" />
+      <img src="./media/C11.jpg" alt="img" />
+      <img src="./media/C12.jpg" alt="img" />
+      <img src="./media/C13.jpg" alt="img" />
+      <img src="./media/C14.jpg" alt="img" />
+      <img src="./media/C15.jpg" alt="img" />
     </div>
   </div>
-</div>
 
+  <div class="page-layout">
+    <aside class="side left">
+      <h2>Emozioni e Luoghi</h2>
+  <ul>
+    <li><a href="#">🌄 Paesaggi</a></li>
+    <li><a href="#">🚶‍♂️ Esperienze locali</a></li>
+    <li><a href="#">🕌 Spiritualità</a></li>
+    <li><a href="#">🎒 Zaino in spalla</a></li>
+    <li><a href="#">🛕 Monumenti e storia</a></li>
+    <li><a href="#">📆 Eventi culturali</a></li>
+    <li><a href="#">🗺️ Mappe e percorsi</a></li>
+    <li><a href="#">📽️ Video e documentari</a></li>
+    <li><a href="#">💡 Curiosità dal mondo</a></li>
+  </ul>
+    </aside>
 
+    <main>
+      
 
+      <section class="intro">
+        <h3>Mi presento: sono Islam Mir d'origine del Bangladesh e dall'età dell'adolescenza sono in Italia. Studio nell'ambito di Informatica ma mi piace viaggiare. Il mio motto di viaggio è: <b>C’è un modo di viaggiare che non cerca mete, ma significati !</b> L'obiettivo di questo sito è di raggruppare le mie esperienze di vita con le mie conoscenze scolastiche.</h3>
+      
+        <p>
+        In <b>Malesia,</b> tra le giungle umide e le luci di Kuala Lumpur, si incrociano religioni, lingue e odori che raccontano un'Asia multiforme e inafferrabile. Le strade profumano di curry, incenso e modernità, e ogni sguardo è un mondo.
+        <br>La <b>Thailandia</b> danza su un equilibrio fragile tra spiritualità e caos. I templi dorati emergono tra mercati brulicanti, e il tempo sembra dilatarsi tra una preghiera al Wat Pho e un tramonto sull’oceano. La gentilezza ha la voce lieve, il sorriso lento, la forza quieta.
+        <br>In <b>Sri Lanka,</b> il verde è più intenso, quasi sacro. Risaie, alture nebbiose e treni lenti attraversano paesaggi che parlano di antichi regni e di ferite recenti. C'è un ritmo profondo, quasi ancestrale, che guida le giornate: il suono del mare, i canti nei templi, il vento sulle piantagioni di tè.
+        <br>Le <b>Maldive</b> non sono solo cartoline perfette. Sono silenzio, sospensione, essenzialità. Un luogo dove il cielo incontra l’acqua senza interruzione e l’essere umano diventa piccolo, ma non insignificante. Qui il tempo non corre: fluttua.
+        </p>
 
-	
+        <p>Viaggiare attraverso l’<b>Europa</b> mi ha fatto capire quanto sia incredibile la varietà che esiste in così poco spazio. Ogni Paese ha lasciato qualcosa: un’idea, un’atmosfera, un ricordo che non saprei spiegare fino in fondo.<br>
+        <b>Roma</b> mi ha insegnato che non bisogna cercare i monumenti o attrazioni famose. Nel cuore della notte c'è un altro racconto che ogni strada, ogni città ha di questo continente. Ma la vera scoperta arriva sempre chiaccherando con le persone del posto.<br></p><br>
 
+        <h2>I paesi che ho respirato....</h2>
+        <nav>
+          <a href="#"><img src="https://flagcdn.com/w20/bd.png" /> Bangladesh</a>
+          <a href="#"><img src="https://flagcdn.com/w20/it.png" /> Italia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/fr.png" /> Francia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/hr.png" /> Croazia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/ch.png" /> Svizzera</a>
+          <a href="#"><img src="https://flagcdn.com/w20/pt.png" /> Portogallo</a>
+          <a href="#"><img src="https://flagcdn.com/w20/de.png" /> Germania</a>
+          <a href="#"><img src="https://flagcdn.com/w20/pl.png" /> Polonia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/mt.png" /> Malta</a>
+          <a href="#"><img src="https://flagcdn.com/w20/gb.png" /> Inghilterra</a>
+          <a href="#"><img src="https://flagcdn.com/w20/es.png" /> Spagna</a>
+          <a href="#"><img src="https://flagcdn.com/w20/lk.png" /> Sri Lanka</a>
+          <a href="#"><img src="https://flagcdn.com/w20/mv.png" /> Maldive</a>
+          <a href="#"><img src="https://flagcdn.com/w20/my.png" /> Malesia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/sg.png" /> Singapore</a>
+          <a href="#"><img src="https://flagcdn.com/w20/th.png" /> Thailandia</a>
+          <a href="#"><img src="https://flagcdn.com/w20/ae.png" /> Emirati Arabi</a>
+          <a href="#"><img src="https://flagcdn.com/w20/al.png" /> Albania</a>
+          <a href="#"><img src="https://flagcdn.com/w20/va.png" /> Città del Vaticano</a>
+          <a href="#"><img src="https://flagcdn.com/w20/sm.png" /> San Marino</a>
+          <a href="#"><img src="https://flagcdn.com/w20/mc.png" /> Monaco</a>
+          <a href="#"><img src="https://flagcdn.com/w20/li.png" /> Liechtenstein</a>
+        </nav>
 
-		<h3>Mi presento: sono Islam Mir d'origine del Bangladesh e dall'età dell'adolescenza sono in Italia. Studio nell'ambito di Informatica ma mi piace viaggiare. Il mio motto di viaggio è: <b>C’è un modo di viaggiare che non cerca mete, ma significati !</b> L'obiettivo di questo sito è di raggruppare le mie esperienze di vita con le mie conoscenze scolastiche.</h3>
-		
-		<p>
-In <b>Malesia,</b> tra le giungle umide e le luci di Kuala Lumpur, si incrociano religioni, lingue e odori che raccontano un'Asia multiforme e inafferrabile. Le strade profumano di curry, incenso e modernità, e ogni sguardo è un mondo.
+        <h2><a href="./media/vietnam.pdf" target="_blank" download="vietnam.pdf">Scopri il mio prossimo itinerario</a></h2>
+      </section>
+    </main>
 
-<br>La <b>Thailandia</b> danza su un equilibrio fragile tra spiritualità e caos. I templi dorati emergono tra mercati brulicanti, e il tempo sembra dilatarsi tra una preghiera al Wat Pho e un tramonto sull’oceano. La gentilezza ha la voce lieve, il sorriso lento, la forza quieta.
+    <aside class="side right">
+        <h2>Esplorazioni e Cultura</h2>
+  <ul>
+    <li><a href="#">🌍 Cultura</a></li>
+    <li><a href="#">📷 Fotografie</a></li>
+    <li><a href="#">🎧 Musica</a></li>
+    <li><a href="#">🧭 Consigli</a></li>
+    <li><a href="#">✈️ Itinerari</a></li>
+    <li><a href="#">📚 Letture</a></li>
+    <li><a href="#">🍜 Cibo locale</a></li>
+    <li><a href="#">💬 Citazioni</a></li>
+    <li><a href="#">📝 Diario di viaggio</a></li>
+  </ul>
+    </aside>
+  </div>
 
-<br>In <b>Sri Lanka,</b> il verde è più intenso, quasi sacro. Risaie, alture nebbiose e treni lenti attraversano paesaggi che parlano di antichi regni e di ferite recenti. C'è un ritmo profondo, quasi ancestrale, che guida le giornate: il suono del mare, i canti nei templi, il vento sulle piantagioni di tè.
-
-<br>Le <b>Maldive</b> non sono solo cartoline perfette. Sono silenzio, sospensione, essenzialità. Un luogo dove il cielo incontra l’acqua senza interruzione e l’essere umano diventa piccolo, ma non insignificante. Qui il tempo non corre: fluttua.</p>
-
-		<p>Viaggiare attraverso l’<b>Europa</b> mi ha fatto capire quanto sia incredibile la varietà che esiste in così poco spazio. Ogni Paese ha lasciato qualcosa: un’idea, un’atmosfera, un ricordo che non saprei spiegare fino in fondo.<br>
-
-<b>Roma</b> mi ha insegnato che non bisogna cercare i monumenti o attrazioni famose. Nel cuore della notte c'è un altro racconto che ogni strada, ogni città ha di questo continente. Ma la vera scoperta arriva sempre chiaccherando con le persone del posto.<br></p><br>
-<h2><a href="./media/vietnam.pdf" target="_blank" download="vietnam.pdf">Scopri il mio prossimo itinerario</a></h2>
-		</article>
-
-		
-		<nav>
-		<h1>Paesi che ho respirato</h1>	
-		<a href="#">Sri Lanka</a>
-		<a href="#">Maldives</a>
-		<a href="#">Malesia</a>	
-		<a href="#">Singapore</a>
-		<a href="#">Thailandia</a>
-		<a href="#">Emirati Arabi</a>
-		<a href="#">Albania</a>
-		<a href="#">Città del Vaticano</a>
-		<a href="#">San Marino</a>
-		<a href="#">Principato di Monaco</a>
-		<a href="#">Liechtenstein</a>
-		</nav>
-	
-
-	</section>
-
-
-<footer>
-	<h5>&copy; 2025 ISLAM MIR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PER SCRIVERMI: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:islam.mir@aldini.istruzioneer.it">islam.mir@aldini.istruzioneer.it </a></h5> 
-</footer>
+  <footer>
+    <div class="footer-line"></div>
+    <p>&copy; 2025 Islam Mir | <a href="mailto:islam.mir@aldini.istruzioneer.it">Contattami</a></p>
+    <div class="social-icons">
+      <a href="https://mirislam.website/"><i class="fab fa-facebook"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-instagram"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-twitter"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
 
 </body>
-
 </html>
