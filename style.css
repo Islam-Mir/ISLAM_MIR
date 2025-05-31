@@ -141,9 +141,9 @@ h1 {
 .carousel-track {
   display: flex;
   gap: 8px;
+  width: max-content;
   animation: scroll 40s linear infinite alternate;
   padding: 10px;
-  width: max-content;
 }
 
 .carousel-track img {
@@ -168,8 +168,12 @@ h1 {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 
