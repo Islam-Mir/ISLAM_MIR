@@ -165,11 +165,6 @@ h1 {
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .carousel-full:hover .carousel-track {
-    animation-play-state: paused;
-  }
-}
 
 @media (hover: hover) and (pointer: fine) {
   .carousel-track img:hover {
