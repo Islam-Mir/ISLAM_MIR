@@ -159,11 +159,15 @@ h1 {
 }
 
 /* Hover zoom solo su desktop */
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: clamp(100px, 40vw, 160px);
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
-  .carousel-track img:hover {
-    transform: scale(2.05) rotate(5deg);
-    position: relative;
-    z-index: 10;
+  .carousel-full:hover .carousel-track {
+    animation-play-state: paused;
   }
 }
 
