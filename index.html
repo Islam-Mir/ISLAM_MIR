@@ -12,7 +12,7 @@
 
   <input type="checkbox" id="popup-toggle" class="popup-toggle">
 <div class="popup">
-  <label for="popup-toggle" class="popup-close">✖</label>
+  <label for="popup-toggle" class="popup-close" aria-label="Chiudi popup">✖</label>
   <h2>🚧 Sito in lavorazione</h2>
   <p>Questo sito è attualmente in fase di sviluppo. Alcune funzionalità potrebbero non essere disponibili.</p>
 </div>
@@ -51,7 +51,7 @@
     window.addEventListener('load', () => {
       audio.play().catch(() => {
         // Cambia bottone se l'audio non parte da solo
-        button.textContent = 'Musica in sottofondo. per avviare la musica clicca cui: ▶️ ';
+        button.textContent = 'Musica in sottofondo disattivata. Clicca per avviare ▶️ ';
       });
     });
   </script>
