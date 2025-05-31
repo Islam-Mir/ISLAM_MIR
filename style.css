@@ -171,6 +171,12 @@ h1 {
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .carousel-track img:hover {
+    transform: scale(2.1);
+  }
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
