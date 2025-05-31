@@ -386,3 +386,57 @@ footer {
 }
 
 
+/* Mobile dropdown menu (visibile solo su schermi piccoli) */
+.mobile-side-menu {
+  display: none;
+  margin: 20px;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.mobile-side-menu details {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.mobile-side-menu summary {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0077b6;
+  cursor: pointer;
+}
+
+.mobile-side-menu ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.mobile-side-menu li {
+  margin-bottom: 8px;
+}
+
+.mobile-side-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-side-menu a:hover {
+  color: #0077b6;
+}
+
+/* Nasconde colonne laterali su mobile, mostra menu a tendina */
+@media (max-width: 768px) {
+  .side {
+    display: none;
+  }
+
+  .mobile-side-menu {
+    display: block;
+  }
+}
