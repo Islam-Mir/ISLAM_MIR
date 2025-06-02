@@ -441,3 +441,11 @@ footer {
     display: block;
   }
 }
+
+.headerdiving {
+  background: linear-gradient(to right, #0077be, #00b4d8, #90e0ef);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #ffffff; /* testo bianco per contrasto */
+}
