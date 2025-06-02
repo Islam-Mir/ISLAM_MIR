@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ 
+ 
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog di Islam Mir</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+
+  <header class="headerdiving">
+    <div class="marquee-container">
+      <img src="./media/M19.jpg" alt="Foto" />
+      ,<selection class='intro'> <h2>Ogni immersione è un passo in più verso ciò che non si vede...</h2> </selection>
+      <img src="./media/M16.jpg" alt="viaggio" />
+    </div>
+  </header>
+  <div class="search-bar">
+        <div class="audio-control">
+          <button id="toggle-audio"></button>
+        </div>
+        <audio id="bg-audio" autoplay loop>
+  <source src="./media/Pufino - Naturally (freetouse.com).mp3" type="audio/mpeg">
+  Il tuo browser non supporta l'audio HTML5.
+</audio>
+
+  <script>
+    const audio = document.getElementById('bg-audio');
+    const button = document.getElementById('toggle-audio');
+
+    button.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = '⏸️ Metti in pausa';
+      } else {
+        audio.pause();
+        button.textContent = '▶️ Riprendi musica';
+      }
+    });
+
+    // Eventuale fallback per browser che bloccano autoplay
+    window.addEventListener('load', () => {
+      audio.play().catch(() => {
+        // Cambia bottone se l'audio non parte da solo
+        button.textContent = 'Musica in sottofondo disattivata. Clicca per avviare ▶️ ';
+      });
+    });
+  </script>
+       &nbsp;&nbsp;&nbsp;<selection class='intro'> <h4>Sotto l’acqua ho trovato calma, sopra ho trovato storie.<br> Questo spazio è il mio modo per condividerle con chi ha voglia di sognare un po’.</h4></selection>&nbsp;&nbsp;&nbsp;
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+          <input type="text" name="q" placeholder="Ricerca su Google..." required />
+          <button type="submit">Cerca</button>
+        </form>
+      </div>
+      <div class="home-button-container">
+  <a href="index.html" class="btn-home">🏠 Torna alla Home</a>
+</div>
+
+ 
+
+
+
+
+<!-- Sezione video con sfondo -->
+<div class="video-section">
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="./media/sub1.mp4" type="video/mp4" />
+    Il tuo browser non supporta il video HTML5.
+  </video>
+
+  <div class="content-overlay">
+    <h2>Vuoi vedere il video tutorial di subacqua?</h2>
+    <button id="open-modal" class="btn-primary">Guarda il video</button>
+  </div>
+</div>
+
+<!-- Modale con video tutorial -->
+<div class="video-modal" id="video-modal">
+  <div class="video-modal-content">
+    <span class="modal-close" id="close-modal">&times;</span>
+    <video id="modal-video" controls autoplay playsinline>
+      <source src="./media/diving_background.mp4" type="video/mp4" />
+      Il tuo browser non supporta il video HTML5.
+    </video>
+    <div id="video-end-message" class="end-message">
+      <p>Hai finito di guardare il tutorial?</p>
+      <a href="./dettagli.html" class="btn-secondary">Vai ai dettagli</a>
+    </div>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const modal = document.getElementById("video-modal");
+  const video = document.getElementById("modal-video");
+  const modalContent = document.querySelector(".video-modal-content");
+
+  document.getElementById("open-modal").addEventListener("click", () => {
+    modal.classList.add("active");
+    modalContent.classList.remove("show-end");
+    video.currentTime = 0;
+    video.play();
+  });
+
+  document.getElementById("close-modal").addEventListener("click", () => {
+    video.pause();
+    modal.classList.remove("active");
+    modalContent.classList.remove("show-end");
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      video.pause();
+      modal.classList.remove("active");
+      modalContent.classList.remove("show-end");
+    }
+  });
+
+  video.addEventListener("ended", () => {
+  console.log("Video finito, mostro messaggio");
+  modalContent.classList.add("show-end");
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page-layout">
+<aside class="side left">
+        <h2>Kit Base per Subacquei</h2>
+  <ul>
+    <li>🤿 <strong><a href="https://it.wikipedia.org/wiki/Maschera_subacquea" target="_blank" rel="noopener noreferrer">Maschera e boccaglio</a></strong> — Per vedere sott’acqua e respirare in superficie</li>
+    <li>🐚 <strong><a href="https://it.wikipedia.org/wiki/Pinna_subacquea" target="_blank" rel="noopener noreferrer">Pinne</a></strong> — Aiutano a nuotare più facilmente e velocemente</li>
+    <li>🦺 <strong><a href="https://www.padi.com/learn-to-dive/scuba-diving-equipment" target="_blank" rel="noopener noreferrer">Giubbotto di galleggiamento (BCD)</a></strong> — Per controllare la flottabilità in acqua</li>
+    <li>🎈 <strong><a href="https://it.wikipedia.org/wiki/Bombola_subacquea" target="_blank" rel="noopener noreferrer">Bombola e erogatore</a></strong> — Fonte d’aria durante le immersioni</li>
+    <li>⏱️ <strong><a href="https://it.wikipedia.org/wiki/Computer_subacqueo" target="_blank" rel="noopener noreferrer">Computer subacqueo o profondimetro</a></strong> — Per monitorare tempo e profondità</li>
+    <li>🩱 <strong><a href="https://it.wikipedia.org/wiki/Muta_subacquea" target="_blank" rel="noopener noreferrer">Muta</a></strong> — Protezione termica contro il freddo e abrasioni</li>
+    <li>📗 <strong><a href="https://www.padi.com/courses/open-water-diver" target="_blank" rel="noopener noreferrer">Manuale o corso base di immersione</a></strong> — Fondamentale per conoscere le regole di sicurezza</li>
+  </ul>
+</details>
+
+    </aside>
+
+
+    <!-- Menu mobile visibile solo su dispositivi piccoli -->
+<div class="mobile-side-menu">
+  <details>
+  <summary>Kit Base per Subacquei</summary>
+  <ul>
+    <li>🤿 <strong><a href="https://it.wikipedia.org/wiki/Maschera_subacquea" target="_blank" rel="noopener noreferrer">Maschera e boccaglio</a></strong> — Per vedere sott’acqua e respirare in superficie</li>
+    <li>🐚 <strong><a href="https://it.wikipedia.org/wiki/Pinna_subacquea" target="_blank" rel="noopener noreferrer">Pinne</a></strong> — Aiutano a nuotare più facilmente e velocemente</li>
+    <li>🦺 <strong><a href="https://www.padi.com/learn-to-dive/scuba-diving-equipment" target="_blank" rel="noopener noreferrer">Giubbotto di galleggiamento (BCD)</a></strong> — Per controllare la flottabilità in acqua</li>
+    <li>🎈 <strong><a href="https://it.wikipedia.org/wiki/Bombola_subacquea" target="_blank" rel="noopener noreferrer">Bombola e erogatore</a></strong> — Fonte d’aria durante le immersioni</li>
+    <li>⏱️ <strong><a href="https://it.wikipedia.org/wiki/Computer_subacqueo" target="_blank" rel="noopener noreferrer">Computer subacqueo o profondimetro</a></strong> — Per monitorare tempo e profondità</li>
+    <li>🩱 <strong><a href="https://it.wikipedia.org/wiki/Muta_subacquea" target="_blank" rel="noopener noreferrer">Muta</a></strong> — Protezione termica contro il freddo e abrasioni</li>
+    <li>📗 <strong><a href="https://www.padi.com/courses/open-water-diver" target="_blank" rel="noopener noreferrer">Manuale o corso base di immersione</a></strong> — Fondamentale per conoscere le regole di sicurezza</li>
+  </ul>
+</details>
+
+
+  <details>
+    <summary>Esplorazioni e Cultura</summary>
+    <ul>
+      <li><a href="#">📷 Fotografie</a></li>
+      <li><a href="#">🧭 Consigli</a></li>
+      <li><a href="#">📝 Diario di viaggio</a></li>
+    </ul>
+  </details>
+</div>
+
+
+    <main>
+          
+  <section class="intro">
+    <h2>Il mio viaggio nel mondo sommerso: dalle Maldive alla Malesia</h2>
+    <p> Il mio primo tuffo è stato alle Maldive, sull’isola di Dhiffushi. Era la mia prima volta con maschera e pinne e devo dire che è stato pazzesco. Ho nuotato vicino a piccoli squali, un’esperienza che non dimenticherò mai e che mi ha fatto venire voglia di immergermi ancora di più. </p><br>
+<p>Dopo quel primo assaggio, ho deciso di fare sul serio e mi sono iscritto a un corso subacqueo di livello 2 in mare aperto, questa volta alle isole Perhentian in Malesia. Lì ho avuto la fortuna di incontrare tartarughe giganti che nuotavano tranquille vicino a me. È stato incredibile poterle osservare così da vicino, e ho capito quanto sia speciale questo mondo sotto la superficie.</p><br> 
+<p>Ogni immersione è stata un’avventura, piena di sorprese e incontri unici. Se vi piace il mare e volete scoprire qualcosa di diverso, vi consiglio di provare almeno una volta: non è solo sport, è un modo tutto nuovo di vedere il mondo.</p>
+    <div class="underwater-gallery">
+      <img src="./media/turt1.jpg" alt="Coralli" />
+      <img src="./media/turt2.jpg" alt="Tartaruga marina" />
+      <img src="./media/turt3.jpg" alt="Sub in immersione" />
+      <img src="./media/turt4.jpg" alt="Pesci tropicali" />
+    </div>
+
+    <h3>🔗 Risorse utili</h3>
+    <ul>
+      <li><a href="https://it.wikipedia.org/wiki/Subacquea" target="_blank">Cos'è la subacquea?</a></li>
+      <li><a href="https://www.padi.com/" target="_blank">PADI - Corsi di immersione</a></li>
+    </ul>
+  </section><br>
+
+       <selection class='intro'> <h4>Le mie esperienze subacque....</h4></selection>
+        <nav>
+<a href="https://scubadivinemaldives.com/" target="_blank"><img src="./media/md.png" /> Maldive</a>
+<a href="https://www.angel-diver.com/" target="_blank"><img src="./media/ad.png" /> Malesia</a>
+        </nav>
+
+       <selection class='intro'>  <a href="./media/padi.pdf" target="_blank" download="padi.pdf"><h4>La mia certificazione PADI </h4></a></selection>
+      </section>
+    </main>
+
+    <aside class="side right">
+        <h2>Esplorazioni e Cultura</h2>
+  <ul>
+      <li><a href="#">📷 Fotografie</a></li>
+      <li><a href="#">🧭 Consigli</a></li>
+      <li><a href="#">📝 Diario di viaggio</a></li>
+  </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-line"></div>
+    <p>&copy; 2025 Islam Mir | <a href="mailto:islam.mir@aldini.istruzioneer.it">Contattami</a></p>
+    <div class="social-icons">
+      <a href="https://mirislam.website/"><i class="fab fa-facebook"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-instagram"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-twitter"></i></a>
+      <a href="https://mirislam.website/"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <!-- Modal per l'immagine ingrandita -->
+<div id="image-modal" class="modal" style="display:none;">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+
+
+</body>
+</html>
