@@ -465,7 +465,7 @@ footer {
   width: 80%;          /* il video occupa l'80% della larghezza del contenitore */
   max-width: 800px;    /* larghezza massima */
   height: 100%;
-  object-fit: cover;   /* riempie il contenitore senza deformarsi */
+  object-fit: contain;   /* riempie il contenitore senza deformarsi */
   border-radius: 12px; /* angoli arrotondati (opzionale) */
   box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* ombra leggera */
 }
