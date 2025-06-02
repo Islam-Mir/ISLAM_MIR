@@ -33,36 +33,7 @@
     </div>
   </header>
   <div class="search-bar">
-        <div class="audio-control">
-          <button id="toggle-audio"></button>
-        </div>
-        <audio id="bg-audio" autoplay loop>
-  <source src="./media/Pufino - Naturally (freetouse.com).mp3" type="audio/mpeg">
-  Il tuo browser non supporta l'audio HTML5.
-</audio>
-
-  <script>
-    const audio = document.getElementById('bg-audio');
-    const button = document.getElementById('toggle-audio');
-
-    button.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-        button.textContent = '⏸️ Metti in pausa';
-      } else {
-        audio.pause();
-        button.textContent = '▶️ Riprendi musica';
-      }
-    });
-
-    // Eventuale fallback per browser che bloccano autoplay
-    window.addEventListener('load', () => {
-      audio.play().catch(() => {
-        // Cambia bottone se l'audio non parte da solo
-        button.textContent = 'Musica in sottofondo disattivata. Clicca per avviare ▶️ ';
-      });
-    });
-  </script>
+        
        &nbsp;&nbsp;&nbsp;<selection class='intro'> <h4>Sotto l’acqua ho trovato calma, sopra ho trovato storie.<br> Questo spazio è il mio modo per condividerle con chi ha voglia di sognare un po’.</h4></selection>&nbsp;&nbsp;&nbsp;
         <form action="https://www.google.com/search" method="GET" target="_blank">
           <input type="text" name="q" placeholder="Ricerca su Google..." required />
