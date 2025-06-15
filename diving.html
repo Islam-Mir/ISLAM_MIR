@@ -81,32 +81,33 @@
 <!-- Script -->
 <script>
   const modal = document.getElementById("video-modal");
-  const video = document.getElementById("modal-video");
-  const modalContent = document.querySelector(".video-modal-content");
+const video = document.getElementById("modal-video");
+const modalContent = document.querySelector(".video-modal-content");
+const btnOpen = document.getElementById("open-modal");
+const btnClose = document.getElementById("close-modal");
 
-  document.getElementById("open-modal").addEventListener("click", () => {
-    modal.classList.add("active");
-    modalContent.classList.remove("show-end");
-    video.currentTime = 0;
-    //video.play();
-  });
+btnOpen.addEventListener("click", () => {
+  modal.classList.add("active");
+  modalContent.classList.remove("show-end");
+  video.currentTime = 0;
+  // video parte solo se premi play manualmente
+});
 
-  document.getElementById("close-modal").addEventListener("click", () => {
+btnClose.addEventListener("click", () => {
+  video.pause();
+  modal.classList.remove("active");
+  modalContent.classList.remove("show-end");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
     video.pause();
     modal.classList.remove("active");
     modalContent.classList.remove("show-end");
-  });
+  }
+});
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      video.pause();
-      modal.classList.remove("active");
-      modalContent.classList.remove("show-end");
-    }
-  });
-
-  video.addEventListener("ended", () => {
-  console.log("Video finito, mostro messaggio");
+video.addEventListener("ended", () => {
   modalContent.classList.add("show-end");
 });
 
