@@ -465,8 +465,7 @@ footer {
 /* Sezione video con sfondo */
 .video-section {
   position: relative;
-  width: 100%;
-  max-height: 400px; /* limita altezza */
+  height: 400px; /* o altezza che preferisci */
   overflow: hidden;
 }
 
@@ -474,22 +473,19 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-height: 400px;
-  display: block;
 }
 
-/* Overlay contenuto */
 .content-overlay {
-  position: relative;
-  z-index: 2;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  z-index: 10; /* sopra il video */
+  background: rgba(0,0,0,0.4); /* sfondo semi-trasparente per evidenziare */
   padding: 20px;
+  border-radius: 10px;
 }
 
 .btn-primary {
